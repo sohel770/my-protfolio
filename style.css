@@ -9,6 +9,9 @@
     width:1160px;
     margin:0 auto;
     font-family: 'Poppins', sans-serif;
+    display: hidden;
+    
+    
 }
 
 .bg{
@@ -20,6 +23,10 @@
     background-position: center;
     background-size:cover;
     color: white;
+    
+  
+  
+   
    
 }
 
@@ -29,6 +36,10 @@ header {
     align-items: center;
     flex-direction: row;
     padding-top:20px;
+  
+    
+    
+    
 }
 .logo{  
 
@@ -128,6 +139,7 @@ button:hover{
 
 .my-contetn{
     margin-top: 130px;
+   
 }
 .my-contetn p {
     margin-bottom: 25px;
@@ -154,4 +166,10 @@ button:hover{
     background: transparent;
     color: white;
     margin-top: 40px;
+}
+.a{
+    font-size: 55px;
+    color:rgb(8, 156, 255);
+    text-align: center;
+    padding:20px
 }
