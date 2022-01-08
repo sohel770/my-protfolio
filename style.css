@@ -9,7 +9,7 @@
     width:1160px;
     margin:0 auto;
     font-family: 'Poppins', sans-serif;
-    display: hidden;
+    /* display: hidden; */
     
     
 }
@@ -173,3 +173,156 @@ button:hover{
     text-align: center;
     padding:20px
 }
+
+/* start about*/
+
+ .bg-color{
+    background-color:#0E1525;
+} 
+
+.about{
+    padding-top:130px;
+    padding-bottom:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-right{
+    width:40%;
+   
+}
+.img-right img{
+    width:100%;
+    border-radius: 15px;
+}
+.about-content{
+    width:55%;
+    height: 450px;
+  
+}
+.about-content h1 {
+    color: wi;
+    color: white;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+}
+.about-content p {
+    color: white;
+    padding-top: 18px;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #7D8191;
+    padding-bottom: 21px;
+}
+
+
+.button {
+
+    background-color: #0E1525;
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid rgb(236, 227, 227);
+    margin-left: 0px;
+   
+}
+.button a {
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bolder;
+    display: inline-block;
+    padding: 18px 34px;
+    
+}
+.button a:hover{
+    background-color: #f8496b;
+}
+
+
+.progress-bars{
+    padding-top: 30px;
+}
+.progress-bars ul li {
+    list-style-type: none;
+    color: #f7e6e6;
+    margin-bottom: 35px;
+    position: relative;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+.progress-bars ul li::before{
+    position: absolute;
+    content: '';
+    background-color:white;
+    width:100%;
+    height: 5px;
+    top:calc(100% + 5px);
+    border-radius: 100px;
+    left: 0;
+}
+.progress-bars ul li::after{
+    position: absolute;
+    content: '';
+    background-color:white;
+    width:0;
+    height: 5px;
+
+    background-image: linear-gradient(to right,#F8496B,#4B76EC);
+    top:calc(100% + 5px);
+    border-radius: 100px;
+    left: 0;
+
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: forward;
+    animation-delay: 1s;
+}
+.progress-bars ul li.one::after{
+    animation-name: nameone;
+}
+@keyframes nameone{
+    to{
+        width:80%;
+    }
+}
+
+
+.progress-bars ul li.two::after{
+    animation-name: nametow;
+}
+@keyframes nametow{
+    to{
+        width:95%;
+    }
+}
+
+.progress-bars ul li.three::after{
+    animation-name: nathree;
+}
+@keyframes nathree{
+    to{
+        width:80%;
+    }
+}
+.progress-bars ul li.fore::after{
+    animation-name: namefore;
+}
+@keyframes namefore{
+    to{
+        width:95%;
+    }
+}
+.progress-bars ul li.five::after{
+    animation-name: namefive;
+}
+@keyframes namefive{
+    to{
+        width:75%;
+    }
+}
+
+
